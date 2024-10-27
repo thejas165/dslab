@@ -17,8 +17,8 @@ void insert(int *front , int *rear, int *num)
     }
     else
     {
-        queue[*rear]=*num;
-        *rear=*rear+1;
+         *rear=*rear+1;
+         queue[*rear]=*num;
     }
 }
 int delete(int *front , int *rear)
