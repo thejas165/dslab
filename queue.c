@@ -30,12 +30,14 @@ int delete(int *front , int *rear)
     }
     else if(*front==*rear)
     {
+        printf("element %d is deleted",queue[*front]);
         int val=queue[*front];
         *rear=-1;
         *front=-1;
         return val;
     }
     else{
+        printf("element %d is deleted",queue[*front]);
         int val=queue[*front];
         *front=*front+1;
         return val;
